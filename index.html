@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<head>
+
+    <script type="module">
+      import wixData from 'wix-data';
+      function addRow(){ 
+          const word = "word";
+          const definition = "definition";
+          const synonym = "synonym";
+          const sentence = "sentence";
+          const tbody = document.querySelector('tbody');
+          tbody.innerHTML += `
+              <tr>
+                  <td>${word}</td>
+                  <td>${definition}</td>
+                  <td>${synonym}</td>
+                  <td>${sentence}</td>
+              </tr>
+              `;
+      }
+      window.onload = function() {
+          console.log("hello!");
+          wixData.get(database, "alam.wasee@gmail.com")
+          .then((item) => {
+              console.log(item);
+          })
+          .catch((err) => {
+              showMessage(err);
+          });
+          addRow();
+      };
+    </script>
+</head>
+<body>
+    <style>
+        body {
+            margin: 0;
+            padding: 2rem;
+        }
+
+        table {
+            text-align: left;
+            position: relative;
+            border-collapse: collapse; 
+        }
+        th, td {
+            padding-right: 1rem;
+            padding-bottom: 0.25rem;
+            padding-top: 0.25rem;
+            padding-left: 0.25rem;
+        }
+        tr.header th {
+            background: lightblue;
+            color: white;
+        }
+        th {
+            background: white;
+            position: sticky;
+            top: 0;
+            box-shadow: 4px 4px 4px -1px rgba(59, 59, 59, 0.4);
+        }
+    </style>
+    
+
+    <table id="vocabTable">
+        <thead>
+          <tr class="header">
+            <th>Vocabulary Word</th>
+            <th>Definition</th>
+            <th>Synonym</th>
+            <th>Example Sentence</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><div contenteditable>Rainbow</div></td>
+            <td><div contenteditable>An arch of colors formed in the sky in certain circumstances, caused by the refraction and dispersion of the sun's light by rain or other water droplets in the atmosphere.</div></td>
+            <td><div contenteditable>Arc</div></td>
+            <td><div contenteditable>What a beautiful rainbow!</div></td>
+          </tr>
+          <tr>
+            <td><div contenteditable>Rainbow</div></td>
+            <td><div contenteditable>An arch of colors formed in the sky in certain circumstances, caused by the refraction and dispersion of the sun's light by rain or other water droplets in the atmosphere.</div></td>
+            <td><div contenteditable>Arc</div></td>
+            <td><div contenteditable>What a beautiful rainbow!</div></td>
+          </tr>
+          <tr>
+            <td><div contenteditable>Rainbow</div></td>
+            <td><div contenteditable>An arch of colors formed in the sky in certain circumstances, caused by the refraction and dispersion of the sun's light by rain or other water droplets in the atmosphere.</div></td>
+            <td><div contenteditable>Arc</div></td>
+            <td><div contenteditable>What a beautiful rainbow!</div></td>
+          </tr>
+          <tr>
+            <td><div contenteditable>Rainbow</div></td>
+            <td><div contenteditable>An arch of colors formed in the sky in certain circumstances, caused by the refraction and dispersion of the sun's light by rain or other water droplets in the atmosphere.</div></td>
+            <td><div contenteditable>Arc</div></td>
+            <td><div contenteditable>What a beautiful rainbow!</div></td>
+          </tr>
+          <tr>
+            <td><div contenteditable>Rainbow</div></td>
+            <td><div contenteditable>An arch of colors formed in the sky in certain circumstances, caused by the refraction and dispersion of the sun's light by rain or other water droplets in the atmosphere.</div></td>
+            <td><div contenteditable>Arc</div></td>
+            <td><div contenteditable>What a beautiful rainbow!</div></td>
+          </tr>
+          <tr>
+            <td><div contenteditable>Rainbow</div></td>
+            <td><div contenteditable>An arch of colors formed in the sky in certain circumstances, caused by the refraction and dispersion of the sun's light by rain or other water droplets in the atmosphere.</div></td>
+            <td><div contenteditable>Arc</div></td>
+            <td><div contenteditable>What a beautiful rainbow!</div></td>
+          </tr>
+          <tr>
+            <td><div contenteditable>Rainbow</div></td>
+            <td><div contenteditable>An arch of colors formed in the sky in certain circumstances, caused by the refraction and dispersion of the sun's light by rain or other water droplets in the atmosphere.</div></td>
+            <td><div contenteditable>Arc</div></td>
+            <td><div contenteditable>What a beautiful rainbow!</div></td>
+          </tr>
+          <tr>
+            <td><div contenteditable>Rainbow</div></td>
+            <td><div contenteditable>An arch of colors formed in the sky in certain circumstances, caused by the refraction and dispersion of the sun's light by rain or other water droplets in the atmosphere.</div></td>
+            <td><div contenteditable>Arc</div></td>
+            <td><div contenteditable>What a beautiful rainbow!</div></td>
+          </tr>
+          <tr>
+            <td><div contenteditable>Rainbow</div></td>
+            <td><div contenteditable>An arch of colors formed in the sky in certain circumstances, caused by the refraction and dispersion of the sun's light by rain or other water droplets in the atmosphere.</div></td>
+            <td><div contenteditable>Arc</div></td>
+            <td><div contenteditable>What a beautiful rainbow!</div></td>
+          </tr>
+          <tr>
+            <td><div contenteditable>Rainbow</div></td>
+            <td><div contenteditable>An arch of colors formed in the sky in certain circumstances, caused by the refraction and dispersion of the sun's light by rain or other water droplets in the atmosphere.</div></td>
+            <td><div contenteditable>Arc</div></td>
+            <td><div contenteditable>What a beautiful rainbow!</div></td>
+          </tr>
+          <tr>
+            <td><div contenteditable>Rainbow</div></td>
+            <td><div contenteditable>An arch of colors formed in the sky in certain circumstances, caused by the refraction and dispersion of the sun's light by rain or other water droplets in the atmosphere.</div></td>
+            <td><div contenteditable>Arc</div></td>
+            <td><div contenteditable>What a beautiful rainbow!</div></td>
+          </tr>
+          <tr>
+            <td><div contenteditable>Rainbow</div></td>
+            <td><div contenteditable>An arch of colors formed in the sky in certain circumstances, caused by the refraction and dispersion of the sun's light by rain or other water droplets in the atmosphere.</div></td>
+            <td><div contenteditable>Arc</div></td>
+            <td><div contenteditable>What a beautiful rainbow!</div></td>
+          </tr>
+          <tr>
+            <td><div contenteditable>Rainbow</div></td>
+            <td><div contenteditable>An arch of colors formed in the sky in certain circumstances, caused by the refraction and dispersion of the sun's light by rain or other water droplets in the atmosphere.</div></td>
+            <td><div contenteditable>Arc</div></td>
+            <td><div contenteditable>What a beautiful rainbow!</div></td>
+          </tr>
+          <tr>
+            <td><div contenteditable>Rainbow</div></td>
+            <td><div contenteditable>An arch of colors formed in the sky in certain circumstances, caused by the refraction and dispersion of the sun's light by rain or other water droplets in the atmosphere.</div></td>
+            <td><div contenteditable>Arc</div></td>
+            <td><div contenteditable>What a beautiful rainbow!</div></td>
+          </tr>
+          <tr>
+            <td><div contenteditable>Rainbow</div></td>
+            <td><div contenteditable>An arch of colors formed in the sky in certain circumstances, caused by the refraction and dispersion of the sun's light by rain or other water droplets in the atmosphere.</div></td>
+            <td><div contenteditable>Arc</div></td>
+            <td><div contenteditable>What a beautiful rainbow!</div></td>
+          </tr>
+          <tr>
+            <td><div contenteditable>Rainbow</div></td>
+            <td><div contenteditable>An arch of colors formed in the sky in certain circumstances, caused by the refraction and dispersion of the sun's light by rain or other water droplets in the atmosphere.</div></td>
+            <td><div contenteditable>Arc</div></td>
+            <td><div contenteditable>What a beautiful rainbow!</div></td>
+          </tr>
+          <tr>
+            <td><div contenteditable>Rainbow</div></td>
+            <td><div contenteditable>An arch of colors formed in the sky in certain circumstances, caused by the refraction and dispersion of the sun's light by rain or other water droplets in the atmosphere.</div></td>
+            <td><div contenteditable>Arc</div></td>
+            <td><div contenteditable>What a beautiful rainbow!</div></td>
+          </tr>
+          <tr>
+            <td><div contenteditable>Rainbow</div></td>
+            <td><div contenteditable>An arch of colors formed in the sky in certain circumstances, caused by the refraction and dispersion of the sun's light by rain or other water droplets in the atmosphere.</div></td>
+            <td><div contenteditable>Arc</div></td>
+            <td><div contenteditable>What a beautiful rainbow!</div></td>
+          </tr>
+          <tr>
+            <td><div contenteditable>Rainbow</div></td>
+            <td><div contenteditable>An arch of colors formed in the sky in certain circumstances, caused by the refraction and dispersion of the sun's light by rain or other water droplets in the atmosphere.</div></td>
+            <td><div contenteditable>Arc</div></td>
+            <td><div contenteditable>What a beautiful rainbow!</div></td>
+          </tr>
+          <tr>
+            <td><div contenteditable>Rainbow</div></td>
+            <td><div contenteditable>An arch of colors formed in the sky in certain circumstances, caused by the refraction and dispersion of the sun's light by rain or other water droplets in the atmosphere.</div></td>
+            <td><div contenteditable>Arc</div></td>
+            <td><div contenteditable>What a beautiful rainbow!</div></td>
+          </tr>
+          <tr>
+            <td><div contenteditable>Rainbow</div></td>
+            <td><div contenteditable>An arch of colors formed in the sky in certain circumstances, caused by the refraction and dispersion of the sun's light by rain or other water droplets in the atmosphere.</div></td>
+            <td><div contenteditable>Arc</div></td>
+            <td><div contenteditable>What a beautiful rainbow!</div></td>
+          </tr>
+          <tr>
+            <td><div contenteditable>Rainbow</div></td>
+            <td><div contenteditable>An arch of colors formed in the sky in certain circumstances, caused by the refraction and dispersion of the sun's light by rain or other water droplets in the atmosphere.</div></td>
+            <td><div contenteditable>Arc</div></td>
+            <td><div contenteditable>What a beautiful rainbow!</div></td>
+          </tr>
+          <tr>
+            <td><div contenteditable>Rainbow</div></td>
+            <td><div contenteditable>An arch of colors formed in the sky in certain circumstances, caused by the refraction and dispersion of the sun's light by rain or other water droplets in the atmosphere.</div></td>
+            <td><div contenteditable>Arc</div></td>
+            <td><div contenteditable>What a beautiful rainbow!</div></td>
+          </tr>
+          <tr>
+            <td><div contenteditable>Rainbow</div></td>
+            <td><div contenteditable>An arch of colors formed in the sky in certain circumstances, caused by the refraction and dispersion of the sun's light by rain or other water droplets in the atmosphere.</div></td>
+            <td><div contenteditable>Arc</div></td>
+            <td><div contenteditable>What a beautiful rainbow!</div></td>
+          </tr>
+          <tr>
+            <td><div contenteditable>Rainbow</div></td>
+            <td><div contenteditable>An arch of colors formed in the sky in certain circumstances, caused by the refraction and dispersion of the sun's light by rain or other water droplets in the atmosphere.</div></td>
+            <td><div contenteditable>Arc</div></td>
+            <td><div contenteditable>What a beautiful rainbow!</div></td>
+          </tr>
+          <tr>
+            <td><div contenteditable>Rainbow</div></td>
+            <td><div contenteditable>An arch of colors formed in the sky in certain circumstances, caused by the refraction and dispersion of the sun's light by rain or other water droplets in the atmosphere.</div></td>
+            <td><div contenteditable>Arc</div></td>
+            <td><div contenteditable>What a beautiful rainbow!</div></td>
+          </tr>
+          <tr>
+            <td><div contenteditable>Rainbow</div></td>
+            <td><div contenteditable>An arch of colors formed in the sky in certain circumstances, caused by the refraction and dispersion of the sun's light by rain or other water droplets in the atmosphere.</div></td>
+            <td><div contenteditable>Arc</div></td>
+            <td><div contenteditable>What a beautiful rainbow!</div></td>
+          </tr>
+          <tr>
+            <td><div contenteditable>Rainbow</div></td>
+            <td><div contenteditable>An arch of colors formed in the sky in certain circumstances, caused by the refraction and dispersion of the sun's light by rain or other water droplets in the atmosphere.</div></td>
+            <td><div contenteditable>Arc</div></td>
+            <td><div contenteditable>What a beautiful rainbow!</div></td>
+          </tr>
+          <tr>
+            <td><div contenteditable>Rainbow</div></td>
+            <td><div contenteditable>An arch of colors formed in the sky in certain circumstances, caused by the refraction and dispersion of the sun's light by rain or other water droplets in the atmosphere.</div></td>
+            <td><div contenteditable>Arc</div></td>
+            <td><div contenteditable>What a beautiful rainbow!</div></td>
+          </tr>
+          
+        </tbody>
+      </table>
+</body>
+
+    
